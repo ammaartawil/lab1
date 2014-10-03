@@ -83,12 +83,11 @@ function calculateLoan(){
 		var totalRepayableRounded = Math.round(totalRepayable);
 		
 		var totalMessage = "Total repayable: <b>&pound;" + numberWithCommas(totalRepayableRounded) + "</b>";
-	}
-	
+		
+	}	
 	
 	document.getElementById("borrowTotalMonthly").innerHTML = message;
 	document.getElementById("borrowTotalMonthly").style.display = 'block';
-	
 	document.getElementById("borrowTotal").innerHTML = totalMessage;
 	document.getElementById("borrowTotal").style.display = 'block';
 }
